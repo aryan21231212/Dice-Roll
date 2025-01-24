@@ -3,7 +3,7 @@ let button = document.querySelector("#but")
 
 let suffle = ()=>{
     let random = Math.floor(Math.random()*6);
-    img.setAttribute("src",`${random}.png`);
+    img.setAttribute("src",`images/${random}.png`);
 }
 
 
@@ -11,5 +11,5 @@ let suffle = ()=>{
 
 button.addEventListener('click',()=>{
    setTimeout(suffle,1000)
-    img.setAttribute("src","dice.gif");
+    img.setAttribute("src","images/dice.gif");
 });
